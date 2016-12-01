@@ -1,0 +1,17 @@
+{
+  "name": "bootstrap-grid-sass",
+  "authors": [
+    "María Reino <info@reinodenoia.com>"
+  ],
+  "description": "Bootstrap's grid and responsive utility classes. Works with sass",
+  "main": "bootstrap-grid-sass.scss",
+  "license": "MIT",
+  "keywords": [
+    "bootstrap",
+    "grid",
+    "layout",
+    "css",
+    "scss"
+  ],
+  "homepage": "https://github.com/mariolinha/bootstrap-grid-sass"
+}

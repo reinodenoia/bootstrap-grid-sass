@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Bootstrap Grid</title>
+    <link href="http://getbootstrap.com/favicon.ico" rel="icon">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="bootstrap-grid-only.css">
+    <style media="screen">
+      body {
+        font-family: 'Source Sans Pro', sans-serif;
+        text-align: center;
+      }
+
+      p.explanation {
+        text-align: justify;
+        width: 80%;
+        margin: 2rem auto 4rem auto;
+
+      }
+      .show-grid {
+        margin-bottom: 15px;
+      }
+      .show-grid [class^="col-"] {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: #eee;
+        background-color: rgba(86,61,124,.15);
+        border: 1px solid #ddd;
+        border: 1px solid rgba(86,61,124,.2);
+      }
+
+      .margin-bottom {
+        margin-bottom: 6rem;
+      }
+    </style>
+  </head>
+  <body>
+
+    <h1><a href="http://getbootstrap.com/css/#grid-example-mixed">
+      Bootstrap - Grid System</a>
+    </h1>
+
+    <p class="explanation">Bootstrap includes a responsive, mobile first fluid grid system
+      that appropriately scales up to 12 columns as the device or viewport size increases.
+      It includes predefined classes for easy layout options, as well as powerful mixins for generating more 
+      semantic layouts.</p>
+
+    <h2>Example: Stacked-to-horizontal</h2>
+
+    <div class="row show-grid">
+      <div class="col-md-1">.col-md-1</div>
+      <div class="col-md-1">.col-md-1</div>
+      <div class="col-md-1">.col-md-1</div>
+      <div class="col-md-1">.col-md-1</div>
+      <div class="col-md-1">.col-md-1</div>
+      <div class="col-md-1">.col-md-1</div>
+      <div class="col-md-1">.col-md-1</div>
+      <div class="col-md-1">.col-md-1</div>
+      <div class="col-md-1">.col-md-1</div>
+      <div class="col-md-1">.col-md-1</div>
+      <div class="col-md-1">.col-md-1</div>
+      <div class="col-md-1">.col-md-1</div>
+    </div>
+
+    <div class="row show-grid">
+      <div class="col-md-8">.col-md-8</div>
+      <div class="col-md-4">.col-md-4</div>
+    </div>
+
+    <div class="row show-grid">
+      <div class="col-md-4">.col-md-4</div>
+      <div class="col-md-4">.col-md-4</div>
+      <div class="col-md-4">.col-md-4</div>
+    </div>
+
+    <div class="row show-grid">
+      <div class="col-md-6">.col-md-6</div>
+      <div class="col-md-6">.col-md-6</div>
+    </div>
+
+    <div class="row show-grid">
+      <div class="col-xs-12 col-sm-6 col-md-8">.col-xs-12 .col-sm-6 .col-md-8</div>
+      <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+    </div>
+
+    <div class="row show-grid">
+      <div class="col-xs-9">.col-xs-9</div>
+      <div class="col-xs-4">.col-xs-4<br>Since 9 + 4 = 13 &gt; 12, this 4-column-wide div gets wrapped onto a new line as one contiguous unit.</div>
+      <div class="col-xs-6">.col-xs-6<br>Subsequent columns continue along the new line.</div>
+    </div>
+
+    <h2>Example: Mobile and desktop</h2>
+
+    <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+    <div class="row show-grid">
+      <div class="col-xs-12 col-md-8">.col-xs-12 .col-md-8</div>
+      <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+    </div>
+
+    <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+    <div class="row show-grid">
+      <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+      <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+      <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+    </div>
+
+    <!-- Columns are always 50% wide, on mobile and desktop -->
+    <div class="row show-grid">
+      <div class="col-xs-6">.col-xs-6</div>
+      <div class="col-xs-6">.col-xs-6</div>
+    </div>
+
+    <h2>Example: Mobile, tablet, desktop</h2>
+
+    <div class="row show-grid">
+      <div class="col-xs-12 col-sm-6 col-md-8">.col-xs-12 .col-sm-6 .col-md-8</div>
+      <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+    </div>
+
+    <div class="row show-grid">
+      <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+      <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+      <!-- Optional: clear the XS cols if their content doesn't match in height -->
+      <div class="clearfix visible-xs-block"></div>
+      <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+    </div>
+
+    <div class="clear margin-bottom"></div>
+
+  </body>
+</html>
