@@ -9,6 +9,27 @@ Bootstrap's grid and responsive classes. Works with Sass
 - Standard [Bootstrap responsive utility classes](http://getbootstrap.com/css/#responsive-utilities): .visible-\*, .hidden-\*, etc
 - [Helper classes] (http://getbootstrap.com/css/#helper-classes-clearfix): .clearfix, .center-block, etc
 
+## Directories structure
+
+```console
+bootstrap-grid-sass/
++-- scss                            // Sass files
+    +-- mixins
+        +-- _layout.scss
+        +-- _utilities.scss
+    +-- _grid.scss
+    +-- _mixins.scss
+    +-- _utilities.scss
+    +-- _variables.scss
+    
++-- bootstrap-grid-sass.scss        // Main file
+
++-- bootstrap-grid-sass.css         // Compiled file
++-- bootstrap-grid-sass.css.map
++-- bower.json      
++-- index.html                      // Example
+```
+
 ## Installation
 
 Please see the appropriate guide for your environment of choice:
