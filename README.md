@@ -39,7 +39,7 @@ Please see the appropriate guide for your environment of choice:
 ### a. Manually
 You can use it in two different ways:
 - You can include the precompiled file `boostrap-grid-sass.css` in your site.
-- You can customize and compile the sass files. More information about Sass [here](http://sass-lang.com/guide).
+- You can customize and compile the sass files. More information about [Sass](http://sass-lang.com/guide).
   1. Copy the repository in your assets/css folder. 
   2. Include the main file in your application.css.scss    
        
